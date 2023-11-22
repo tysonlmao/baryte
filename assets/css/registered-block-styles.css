@@ -1,0 +1,48 @@
+/*
+ * CSS for registered block styles.
+ * See inc/register-block-styles.php.
+ */
+
+/* Flat button */
+.is-style-baryte-flat-button .wp-block-button__link,
+.is-style-baryte-flat-button .wp-block-button__link:hover,
+.is-style-baryte-flat-button .wp-block-button__link:focus,
+.is-style-baryte-flat-button .wp-block-button__link:active,
+.is-style-baryte-flat-button .wp-block-button__link:visited {
+	box-shadow: none;
+	border-radius: 0;
+	margin-top: initial;
+	margin-bottom: initial;
+}
+
+/* Box shadow */
+.is-style-baryte-box-shadow {
+	box-shadow: var(--wp--preset--shadow--natural);
+}
+
+/* Lists */
+.is-style-baryte-list-underline li {
+	border-bottom: 1px solid currentcolor;
+}
+
+.is-style-baryte-list-underline ul {
+	border-top: 1px solid currentcolor;
+}
+
+.is-style-baryte-list-underline ul li {
+	border: none;
+}
+
+details.is-style-baryte-plus > summary {
+	list-style-type: "+ ";
+}
+
+details[open].is-style-baryte-plus > summary {
+	list-style-type: "- ";
+}
+
+details.is-style-baryte-plus > summary::marker {
+	font-weight: 700;
+	font-size: 1em;
+	font-family: var(--wp--preset--font-family--monospace);
+}
