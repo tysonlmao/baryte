@@ -53,6 +53,10 @@ a:hover {
 
 }
 
+.wp-site-blocks {
+	padding: 0 !important;
+}
+
 .wp-block-post-title {
 	text-transform: uppercase;
 }
