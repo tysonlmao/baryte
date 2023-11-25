@@ -75,17 +75,26 @@
 			],
 			"duotone": [
 				{
-					"colors": [ "#00a0d2", "#0073aa" ],
+					"colors": [
+						"#00a0d2",
+						"#0073aa"
+					],
 					"slug": "secondary-primary",
 					"name": "Secondary and primary"
 				},
 				{
-					"colors": [ "#0073aa", "#f0f0f1" ],
+					"colors": [
+						"#0073aa",
+						"#f0f0f1"
+					],
 					"slug": "primary-contrast",
 					"name": "Primary and foreground"
 				},
 				{
-					"colors": [ "#1e1e1e", "#f0f0f1" ],
+					"colors": [
+						"#1e1e1e",
+						"#f0f0f1"
+					],
 					"slug": "base-contrast",
 					"name": "background and foreground"
 				}
@@ -96,7 +105,14 @@
 			"wideSize": "1100px"
 		},
 		"spacing": {
-			"units": [ "px", "em", "rem", "vh", "vw", "%" ],
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw",
+				"%"
+			],
 			"spacingScale": {
 				"steps": 7
 			},
@@ -158,25 +174,92 @@
 					"fontFamily": "Consolas,Menlo,Monaco,\"SF Mono\",\"DejaVu Sans Mono\",\"Roboto Mono\",\"Courier New\",Courier,monospace"
 				},
 				{
-					"name": "Lora",
-					"slug": "lora",
-					"fontFamily": "Lora,\"Times New Roman\",\"New York\",Times,\"Noto Serif\",serif",
 					"fontFace": [
 						{
+							"fontDisplay": "swap",
 							"fontFamily": "Lora",
-							"fontWeight": "200 900",
-							"fontStyle": "normal",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/lora-v23-latin-ext_latin-regular.woff2" ]
+							"fontStyle": "italic",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/Lora-Italic-VariableFont_wght.woff2"
+							]
 						},
 						{
+							"fontDisplay": "swap",
 							"fontFamily": "Lora",
-							"fontWeight": "200 900",
-							"fontStyle": "italic",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/lora-v23-latin-ext_latin-italic.woff2" ]
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/Lora-VariableFont_wght.woff2"
+							]
 						}
-					]
+					],
+					"fontFamily": "\"Lora\"",
+					"name": "Lora",
+					"slug": "lora"
+				},
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Roboto Mono",
+							"fontStretch": "normal",
+							"fontStyle": "italic",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/RobotoMono-Italic-VariableFont_wght.woff2"
+							]
+						},
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Roboto Mono",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/RobotoMono-VariableFont_wght.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Roboto Mono\"",
+					"name": "Roboto Mono",
+					"slug": "roboto-mono"
+				},
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "VCR OSD Mono",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/VCR_OSD_MONO_1.001.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"VCR OSD Mono\"",
+					"name": "VCR OSD Mono",
+					"slug": "vcr-osd-mono"
+				},
+				{
+					"fontFace": [
+						{
+							"fontDisplay": "swap",
+							"fontFamily": "Inter",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"src": [
+								"file:./assets/fonts/Inter-VariableFont_slnt,wght.ttf"
+							]
+						}
+					],
+					"fontFamily": "\"Inter\"",
+					"name": "Inter",
+					"slug": "inter"
 				}
 			],
 			"fontSizes": [
@@ -420,7 +503,7 @@
 					"text": "var(--wp--preset--color--contrast)"
 				},
 				"elements": {
-					"link":{
+					"link": {
 						"color": {
 							"text": "var(--wp--preset--color--contrast)"
 						}
@@ -438,7 +521,7 @@
 				}
 			},
 			"yoast/faq-block": {
-				"css" : "& .schema-faq-section { background: var(--wp--preset--color--secondary); color: var(--wp--preset--color--base); padding: 8px 4px 8px 32px; margin: 4px 0;} & .schema-faq-answer{line-height: inherit; margin: 0;}"
+				"css": "& .schema-faq-section { background: var(--wp--preset--color--secondary); color: var(--wp--preset--color--base); padding: 8px 4px 8px 32px; margin: 4px 0;} & .schema-faq-answer{line-height: inherit; margin: 0;}"
 			}
 		},
 		"color": {
@@ -469,28 +552,6 @@
 						"text": "var(--wp--preset--color--contrast)"
 					}
 				}
-			},
-			"button": {
-				"border": {
-					"color": "var(--wp--preset--color--transparent)",
-					"width": "4px",
-					"style": "solid",
-					"radius": "4px"
-				},
-				"color": {
-					"background": "var(--wp--preset--color--primary)",
-					"text": "var(--wp--preset--color--contrast)"
-				},
-				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)",
-					"fontWeight": "700"
-				},
-				"shadow": "var(--wp--preset--shadow--natural)",
-				":hover": {
-					"border": {
-						"color": "var(--wp--preset--color--secondary)"
-					}
-				}
 			}
 		},
 		"typography": {
@@ -498,7 +559,7 @@
 			"fontFamily": "var(--wp--preset--font-family--system)",
 			"lineHeight": "1.7"
 		},
-		"spacing":{
+		"spacing": {
 			"blockGap": "1.7rem",
 			"padding": {
 				"top": "var(--wp--preset--spacing--60)",
@@ -549,22 +610,32 @@
 		{
 			"name": "no-title",
 			"title": "No title",
-			"postTypes": [ "post","page" ]
+			"postTypes": [
+				"post",
+				"page"
+			]
 		},
 		{
 			"name": "featured-image",
 			"title": "Featured image in header",
-			"postTypes": [ "post","page" ]
+			"postTypes": [
+				"post",
+				"page"
+			]
 		},
 		{
 			"name": "sidebar-page-template",
 			"title": "Page with sidebar",
-			"postTypes": [ "page" ]
+			"postTypes": [
+				"page"
+			]
 		},
 		{
 			"name": "sidebar-post-template",
 			"title": "Post with sidebar",
-			"postTypes": [ "post" ]
+			"postTypes": [
+				"post"
+			]
 		},
 		{
 			"name": "single-product",
