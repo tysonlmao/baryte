@@ -26,6 +26,10 @@ html {
 	}
 }
 
+.wp-site-blocks>*+* {
+	margin-block-start: var(--wp--custom--spacing--0) !important;
+  }
+
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
@@ -174,11 +178,4 @@ textarea {
 }
 .wp-block-post-content {
 	padding: 0 !important;
-}
-
-@media screen and (min-width: 700px) {
-	.wp-block-post-content {
-		padding: 1rem;
-		max-width: 100vw;
-	}
 }
