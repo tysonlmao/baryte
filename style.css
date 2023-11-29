@@ -65,6 +65,10 @@ a:hover {
 
 }
 
+.wp-site-blocks {
+	padding: 1rem;
+}
+
 .wp-block-post-title {
 	text-transform: uppercase;
 }
