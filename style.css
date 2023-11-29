@@ -179,5 +179,6 @@ textarea {
 @media screen and (min-width: 700px) {
 	.wp-block-post-content {
 		padding: 1rem;
+		max-width: 100vw;
 	}
 }
