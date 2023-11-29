@@ -54,7 +54,7 @@ a:hover {
 } */
 
 .wp-block-button__link {
-	background-color: var(--wp--preset--color--primary);
+	background-color: var(--wp--preset--color--secondary);
 	color: var(--wp--preset--color--contrast);
 	padding: 1rem;
 
