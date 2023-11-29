@@ -33,6 +33,7 @@ html {
 body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
+	overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 * {
@@ -176,6 +177,21 @@ textarea {
 	text-transform: uppercase;
 	cursor: pointer;
 }
-.wp-block-post-content {
-	padding: 0 !important;
-}
+
+@media (max-width: 768px) {
+	.wp-container {
+	  padding-left: 15px; /* Add padding to the left */
+	  padding-right: 15px; /* Add padding to the right */
+	}
+  
+	.wp-block-group__inner-container {
+	  margin-left: -15px; /* Adjust according to your needs */
+	  margin-right: -15px; /* Adjust according to your needs */
+	}
+  
+	/* Ensure elements don't overflow the viewport */
+	img, video, iframe, .block-editor-block-list__layout {
+	  max-width: 100%;
+	  height: auto;
+	}
+  }
