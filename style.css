@@ -19,6 +19,15 @@ html {
 	scroll-behavior: smooth;
 }
 
+:root {
+  --font-family-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family-mono: "Roboto Mono", var(--font-family-system);
+  --font-family-vcr: "VCR OSD Mono", var(--font-family-system);
+  --color-primary: var(--wp--preset--color--primary); /* Adjust as per your theme */
+  --color-secondary: var(--wp--preset--color--secondary);
+  --color-base: var(--wp--preset--color--base);
+  --color-contrast: var(--wp--preset--color--base); /* Adjust as needed */
+}
 @media screen and (prefers-reduced-motion: reduce) {
 
 	html {
@@ -100,63 +109,53 @@ textarea {
 
   
 
-/* CF7 Form Specific Styles */
+/* CF7 Form Customization */
 .wpcf7 {
-	color: #f4eee0;
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-	background-color: rgba(0, 28, 48, 0.8); /* Semi-transparent background */
-	padding: 20px;
-	border-radius: 10px;
-  }
-  
-  .wpcf7-form-control {
-	background-color: #001c30;
-	border: 1px solid var(--wp--preset--color--primary);
-	color: #f4eee0;
-	margin-bottom: 10px;
-	margin-right: 10px;
-	padding: 20px;
-	border-radius: 5px;
-  }
+    font-family: var(--font-family-system);
+    background-color: rgba(0, 28, 48, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+}
 
-  .wpcf7-form-control::placeholder {
-	color: white;
-	font-family: "Roboto Mono", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-size: 16px;
-  }
-  
-  .wpcf7-form-control:focus {
-	border-color: var(--wp--preset--color--primary);
-	box-shadow: 0 0 10px 1.5px var(--wp--preset--color--primary);
-  }
-  
-  .wpcf7-select {
-	background-color: #001c30;
-	border: 1px solid var(--wp--preset--color--primary);
-	color: #f4eee0;
-	padding: 10px;
-	border-radius: 5px;
-  }
-  
-  .wpcf7-textarea {
-	background-color: #001c30;
-	border: 1px solid var(--wp--preset--color--primary);
-	color: #f4eee0;
-	padding: 10px;
-	border-radius: 5px;
-  }
-  
-  /* Adjust the spacing and alignment of form elements as necessary */
-  .wpcf7-form p {
-	margin-bottom: 15px;
-  }
-  
-  /* Responsive adjustments for smaller screens */
-  @media (max-width: 768px) {
-	.wpcf7-form-control {
-	  width: 100%;
-	}
-  }
+.wpcf7-form-control,
+.wpcf7-textarea {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-primary);
+    color: var(--color-base);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.wpcf7-form-control::placeholder,
+.wpcf7-textarea::placeholder {
+    color: var(--color-contrast);
+    font-family: var(--font-family-mono);
+}
+
+.wpcf7-form-control:focus,
+.wpcf7-textarea:focus {
+    border-color: var(--color-primary);
+    box-shadow: 0 0 10px 1.5px var(--color-primary);
+}
+
+.wpcf7-submit {
+    background-color: var(--color-primary);
+    color: var(--color-contrast);
+    font-family: var(--font-family-vcr);
+    border-radius: 0;
+    font-size: 32px;
+    padding: 0.5rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wpcf7-form-control,
+    .wpcf7-textarea {
+        width: 100%;
+    }
+}
   
   
 
