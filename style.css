@@ -97,6 +97,8 @@ textarea {
 	color: var(--wp--preset--color--primary);
   }
 
+  
+
 /* CF7 Form Specific Styles */
 .wpcf7 {
 	color: #f4eee0;
@@ -172,4 +174,10 @@ textarea {
 }
 .wp-block-post-content {
 	padding: 0 !important;
+}
+
+@media screen and (min-width: 700px) {
+	.wp-block-post-content {
+		padding: 1rem;
+	}
 }
