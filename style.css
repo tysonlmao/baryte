@@ -73,6 +73,9 @@ a:hover {
 	padding: 1rem;
 
 }
+.wp-block-post-content {
+	padding-top: 0 !important; 
+}
 
 .wp-block-post-title {
 	text-transform: uppercase;
