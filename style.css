@@ -114,7 +114,6 @@ textarea {
     font-family: var(--font-family-system);
     background-color: rgba(0, 28, 48, 0.8); /* Semi-transparent background */
     padding: 20px;
-    border-radius: 10px;
 }
 
 .wpcf7-form-control,
@@ -124,22 +123,23 @@ textarea {
     color: var(--color-base);
     padding: 20px;
     border-radius: 5px;
+	border: 3px solid var(--wp--preset--color--primary);
 }
 
 .wpcf7-form-control::placeholder,
 .wpcf7-textarea::placeholder {
-    color: var(--color-contrast);
+	color: var(--color-contrast);
     font-family: var(--font-family-mono);
 }
 
 .wpcf7-form-control:focus,
 .wpcf7-textarea:focus {
-    border-color: var(--color-primary);
+	border-color: var(--color-primary);
     box-shadow: 0 0 10px 1.5px var(--color-primary);
 }
 
 .wpcf7-submit {
-    background-color: var(--color-primary);
+		background-color: var(--color-primary);
     color: var(--color-contrast);
     font-family: var(--font-family-vcr);
     border-radius: 0;
