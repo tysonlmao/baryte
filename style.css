@@ -49,6 +49,10 @@ body {
 	text-decoration: none !important;
 }
 
+bdi {
+	color: var(--wp--preset--color--base)
+}
+
 a:hover {
 	color: var(--wp--preset--color--secondary);
 }
