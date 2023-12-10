@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Filters
  *
@@ -13,9 +14,9 @@
  */
 add_filter(
 	'the_title',
-	function( $title ) {
-		if ( ! is_admin() && empty( $title ) ) {
-			$title = _x( '(No title)', 'Used if posts or pages has no title', 'baryte' );
+	function ($title) {
+		if (!is_admin() && empty($title)) {
+			$title = _x('(No title)', 'Used if posts or pages has no title', 'baryte');
 		}
 
 		return $title;
@@ -26,10 +27,10 @@ add_filter(
  * Replace the default [...] excerpt more with an elipsis.
  *
  * @since 1.0.0
-*/
+ */
 add_filter(
 	'excerpt_more',
-	function( $more ) {
+	function ($more) {
 		return '&hellip;';
 	}
 );

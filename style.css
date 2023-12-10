@@ -37,6 +37,7 @@ html {
 
 .wp-site-blocks>*+* {
 	margin-block-start: var(--wp--custom--spacing--0) !important;
+	padding: 0 !important;
   }
 
 body {
