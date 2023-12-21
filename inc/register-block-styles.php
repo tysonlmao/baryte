@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Block styles.
  *
@@ -13,13 +14,14 @@
  *
  * @return void
  */
-function baryte_register_block_styles() {
+function baryte_register_block_styles()
+{
 
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/button',
 		array(
 			'name'  => 'baryte-flat-button',
-			'label' => __( 'Flat button', 'baryte' ),
+			'label' => __('Flat button', 'baryte'),
 		)
 	);
 
@@ -27,7 +29,7 @@ function baryte_register_block_styles() {
 		'core/list',
 		array(
 			'name'  => 'baryte-list-underline',
-			'label' => __( 'Underlined list items', 'baryte' ),
+			'label' => __('Underlined list items', 'baryte'),
 		)
 	);
 
@@ -35,7 +37,7 @@ function baryte_register_block_styles() {
 		'core/group',
 		array(
 			'name'  => 'baryte-box-shadow',
-			'label' => __( 'Box shadow', 'baryte' ),
+			'label' => __('Box shadow', 'baryte'),
 		)
 	);
 
@@ -43,7 +45,7 @@ function baryte_register_block_styles() {
 		'core/column',
 		array(
 			'name'  => 'baryte-box-shadow',
-			'label' => __( 'Box shadow', 'baryte' ),
+			'label' => __('Box shadow', 'baryte'),
 		)
 	);
 
@@ -51,7 +53,7 @@ function baryte_register_block_styles() {
 		'core/columns',
 		array(
 			'name'  => 'baryte-box-shadow',
-			'label' => __( 'Box shadow', 'baryte' ),
+			'label' => __('Box shadow', 'baryte'),
 		)
 	);
 
@@ -59,11 +61,11 @@ function baryte_register_block_styles() {
 		'core/details',
 		array(
 			'name'  => 'baryte-plus',
-			'label' => __( 'Plus & minus', 'baryte' ),
+			'label' => __('Plus & minus', 'baryte'),
 		)
 	);
 }
-add_action( 'init', 'baryte_register_block_styles' );
+add_action('init', 'baryte_register_block_styles');
 
 /**
  * This is an example of how to unregister a core block style.
@@ -75,13 +77,14 @@ add_action( 'init', 'baryte_register_block_styles' );
  *
  * @return void
  */
-function baryte_unregister_block_style() {
+function baryte_unregister_block_style()
+{
 	wp_enqueue_script(
 		'baryte-unregister',
 		get_stylesheet_directory_uri() . '/assets/js/unregister.js',
-		array( 'wp-blocks', 'wp-dom-ready', 'wp-edit-post' ),
+		array('wp-blocks', 'wp-dom-ready', 'wp-edit-post'),
 		BARYTE_VERSION,
 		true
 	);
 }
-add_action( 'enqueue_block_editor_assets', 'baryte_unregister_block_style' );
+add_action('enqueue_block_editor_assets', 'baryte_unregister_block_style');

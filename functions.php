@@ -1,28 +1,6 @@
 <?php
-
-/**
- * Functions and definitions
- *
- * @link https://developer.wordpress.org/themes/basics/theme-functions/
- *
- * @package baryte
- * @since 1.0.0
- */
-
-/**
- * The theme version.
- *
- * @since 1.0.0
- */
 define('BARYTE_VERSION', wp_get_theme()->get('Version'));
 
-/**
- * Add theme support for block styles and editor style.
- *
- * @since 1.0.0
- *
- * @return void
- */
 function baryte_setup()
 {
 	add_editor_style('./assets/css/style-shared.min.css');
@@ -43,6 +21,13 @@ function baryte_setup()
 	}
 }
 add_action('after_setup_theme', 'baryte_setup');
+
+function baryte_wp_overrides()
+{
+	wp_register_style('wp_overrides', get_theme_file_uri() . '/assets/css/wp-overrides.css');
+	wp_enqueue_style('wp_overrides');
+}
+add_action('wp_enqueue_scripts', 'baryte_wp_overrides', PHP_INT_MAX);
 
 /**
  * Enqueue the CSS files.
@@ -70,12 +55,6 @@ add_action('wp_enqueue_scripts', 'baryte_styles');
 
 // Filters.
 require_once get_theme_file_path('inc/filters.php');
-
-// Block variation example.
 require_once get_theme_file_path('inc/register-block-variations.php');
-
-// Block style examples.
 require_once get_theme_file_path('inc/register-block-styles.php');
-
-// Block pattern and block category examples.
 require_once get_theme_file_path('inc/register-block-patterns.php');
