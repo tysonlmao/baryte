@@ -195,3 +195,7 @@ textarea {
 	  height: auto;
 	}
   }
+
+  .text-transform-uppercase {
+	text-transform: uppercase;
+  }
