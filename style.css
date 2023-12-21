@@ -54,10 +54,6 @@ bdi {
 	color: var(--wp--preset--color--base)
 }
 
-a:hover {
-	color: var(--wp--preset--color--secondary);
-}
-
 /* .wp-block-button__link {
 	background-color: #00A9FF;
 	color: white;
