@@ -82,120 +82,40 @@ bdi {
 	text-transform: uppercase;
 }
 
-label {
-	font-family: "Roboto Mono", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	font-size: 20px;
-        color: var(--wp--preset--color--base) !important;
-		color: var(--wp--preset--color--base);
-}
-
-input {
-	background-color: unset !important;
-	border: 3px solid var(--wp--preset--color--primary);
-	color: var(--wp--preset--color--base) !important;
-	padding: 1rem;
-}
-
-input:focus {
-	border: 3px solid var(--wp--preset--color--primary);
-  }
-
+button,
+input,
+optgroup,
+select,
 textarea {
-	background-color: unset !important;
-	border: 3px solid var(--wp--preset--color--primary);
-	color: var(--wp--preset--color--base) !important;
-	padding: 1rem;
+  color: inherit;
+  font: inherit;
+  margin: 0;
 }
-  
-  input::placeholder {
+
+label {
+    font-size: var(--wp--preset--font-size--small);
 	color: var(--wp--preset--color--primary);
-  }
-
-  
-
-/* CF7 Form Customization */
-.wpcf7 {
-    font-family: var(--font-family-system);
-    background-color: rgba(0, 28, 48, 0.8); /* Semi-transparent background */
-    padding: 20px;
-}
-
-.wpcf7-form-control,
-.wpcf7-textarea {
-    background-color: var(--color-secondary);
-    border: 1px solid var(--color-primary);
-    color: var(--color-base);
-    padding: 20px;
-    border-radius: 5px;
-	border: 3px solid var(--wp--preset--color--primary);
-	margin-right: 0.75rem;
-}
-
-.wpcf7-form-control::placeholder,
-.wpcf7-textarea::placeholder {
-	color: var(--color-contrast);
-    font-family: var(--font-family-mono);
-}
-
-.wpcf7-form-control:focus,
-.wpcf7-textarea:focus {
-	border-color: var(--color-primary);
-    box-shadow: 0 0 10px 1.5px var(--color-primary);
-}
-
-.wpcf7-submit {
-		background-color: var(--color-primary);
-    color: var(--color-contrast);
-    font-family: var(--font-family-vcr);
-    border-radius: 0;
-    font-size: 32px;
-    padding: 0.5rem;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .wpcf7-form-control,
-    .wpcf7-textarea {
-        width: 100%;
-    }
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
   
-  
-
-.wpcf7-submit {
-	background-color: var(--wp--preset--color--primary) !important;
-	color: white;
-	font-family: "VCR OSD Mono", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	border-radius: 0;
-	font-size: 32px;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
-	padding-top: 0;
-	padding-bottom: 0;
-	text-transform: uppercase;
-	cursor: pointer;
+input,
+textarea {
+	width: 100%;
+    padding: var(--wp--preset--spacing--30, 1em) var(--wp--preset--spacing--30, 1em);
+    border: initial;
+    box-shadow: inset 0 0 3px var(--wp--preset--color--primary);
+    border-radius: 3px;
+    color: var(--wp--preset--color--primary);
+    background-color: rgba(128, 128, 128, 0.1);
+    font-size: var(--wp--preset--font-size--small);
 }
 
-@media (max-width: 768px) {
-	.wp-container {
-	  padding-left: 15px; /* Add padding to the left */
-	  padding-right: 15px; /* Add padding to the right */
-	}
-  
-	.wp-block-group__inner-container {
-	  margin-left: -15px; /* Adjust according to your needs */
-	  margin-right: -15px; /* Adjust according to your needs */
-	}
-  
-	/* Ensure elements don't overflow the viewport */
-	img, video, iframe, .block-editor-block-list__layout {
-	  max-width: 100%;
-	  height: auto;
-	}
-  }
-
-  .text-transform-uppercase {
-	text-transform: uppercase;
-  }
+input[type="submit"] {
+	background: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--base);
+    border: inherit;
+    line-height: inherit;
+    font-size: inherit;
+	width: unset;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+}
