@@ -268,21 +268,21 @@
 				},
 				{
 					"fluid": {
-						"max": "3.75rem",
-						"min": "3rem"
-					},
-					"name": "XXL",
-					"size": "3.75rem",
-					"slug": "xx-large"
-				},
-				{
-					"fluid": {
 						"max": "4.8rem",
 						"min": "60px"
 					},
 					"name": "Ginormous",
 					"size": "3.75rem",
 					"slug": "ginormous"
+				},
+				{
+					"fluid": {
+						"max": "10rem",
+						"min": "72px"
+					},
+					"name": "Fill the sky",
+					"size": "9rem",
+					"slug": "fill-the-sky"
 				}
 			]
 		},
@@ -467,7 +467,9 @@
 		"elements": {
 			"heading": {
 				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--vcr-osd-mono)",
+					"fontFamily": "var(--wp--preset--font-family--roboto-mono)",
+					"fontStyle": "normal",
+					"fontWeight": "400",
 					"textTransform": "uppercase"
 				}
 			},
@@ -505,7 +507,7 @@
 			}
 		},
 		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--system)",
+			"fontFamily": "var(--wp--preset--font-family--inter)",
 			"fontSize": "var(--wp--preset--font-size--medium)",
 			"lineHeight": "1.7"
 		}
