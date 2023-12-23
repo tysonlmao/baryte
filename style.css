@@ -54,20 +54,6 @@ bdi {
 	color: var(--wp--preset--color--base)
 }
 
-.wp-block-button__link {
-	background: var(--wp--preset--color--primary);
-    color: var(--wp--preset--color--base);
-    border: inherit;
-    line-height: inherit;
-    font-size: inherit;
-	width: unset;
-    padding: calc(0.667em + 2px) calc(1.333em + 2px);
-
-}
-
-.wp-block-post-content {
-	padding-top: 0 !important; 
-}
 
 button,
 input,
@@ -105,4 +91,24 @@ input[type="submit"] {
     font-size: inherit;
 	width: unset;
     padding: calc(0.667em + 2px) calc(1.333em + 2px);
+}
+
+.wp-block-button__link {
+	background: var(--wp--preset--color--primary);
+    color: var(--wp--preset--color--base);
+    border: inherit;
+    line-height: inherit;
+    font-size: inherit;
+	width: unset;
+    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+
+}
+
+.wp-block-post-content {
+	padding: 0 !important; 
+}
+
+.is-style-baryte__button-border {
+	border: 2px solid inherit;
+	background-color: unset;
 }
