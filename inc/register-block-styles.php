@@ -20,16 +20,8 @@ function baryte_register_block_styles()
 	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
 		'core/button',
 		array(
-			'name'  => 'baryte-flat-button',
-			'label' => __('Flat button', 'baryte'),
-		)
-	);
-
-	register_block_style( // phpcs:ignore WPThemeReview.PluginTerritory.ForbiddenFunctions.editor_blocks_register_block_style
-		'core/list',
-		array(
-			'name'  => 'baryte-list-underline',
-			'label' => __('Underlined list items', 'baryte'),
+			'name'  => 'baryte__button-border',
+			'label' => __('Border only', 'baryte'),
 		)
 	);
 

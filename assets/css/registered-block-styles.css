@@ -46,3 +46,7 @@ details.is-style-baryte-plus > summary::marker {
 	font-size: 1em;
 	font-family: var(--wp--preset--font-family--monospace);
 }
+.is-style-baryte__button-border {
+	border: 2px solid inherit;
+	background-color: unset;
+}

@@ -12,6 +12,8 @@ Version: 1.0.0
 
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+8=D
 */
 
 /* Styles intended only for the front.*/
@@ -108,7 +110,3 @@ input[type="submit"] {
 	padding: 0 !important; 
 }
 
-.is-style-baryte__button-border {
-	border: 2px solid inherit;
-	background-color: unset;
-}

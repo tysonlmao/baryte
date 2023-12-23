@@ -6,6 +6,7 @@ define('BARYTE_VERSION', wp_get_theme()->get('Version'));
  * baryte theme functions
  * @package baryte
  * @since 1.0.0
+ *
  */
 
 if (!function_exists('baryte_setup')) :
