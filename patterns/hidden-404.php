@@ -11,10 +11,18 @@
  */
 
 ?>
-<!-- wp:heading {"textAlign":"center","fontSize":"x-large"} -->
-<h2 class="wp-block-heading has-text-align-center has-x-large-font-size">
-	<?php esc_html_e('Page not found', 'baryte'); ?></h2>
-<!-- /wp:heading -->
-<!-- wp:paragraph -->
-<p><?php esc_html_e('It looks like nothing was found at this location. Maybe try a search?', 'baryte'); ?></p><!-- /wp:paragraph -->
-<!-- wp:search {"label":"Search","showLabel":false,"buttonText":"Search"} /-->
+<!-- wp:cover {"url":"http://localhost:8080/wp-content/uploads/2023/12/minerals-scaled.jpg","id":31,"dimRatio":30,"customOverlayColor":"#6a6563","minHeight":90,"minHeightUnit":"vh","layout":{"type":"constrained"}} -->
+<div class="wp-block-cover" style="min-height:90vh"><span aria-hidden="true" class="wp-block-cover__background has-background-dim-30 has-background-dim" style="background-color:#6a6563"></span><img class="wp-block-cover__image-background wp-image-31" alt="" src="<?php esc_url(get_theme_file_uri() . 'assets/images/minerals.jpg'); ?>" data-object-fit="cover" />
+	<div class="wp-block-cover__inner-container"><!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","bottom":"var:preset|spacing|40"},"blockGap":"0"}},"layout":{"type":"constrained"}} -->
+		<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40)"><!-- wp:heading {"textAlign":"center","style":{"typography":{"lineHeight":"1"}},"fontSize":"fill-the-sky","fontFamily":"inter"} -->
+			<h2 class="wp-block-heading has-text-align-center has-inter-font-family has-fill-the-sky-font-size" style="line-height:1">404</h2>
+			<!-- /wp:heading -->
+
+			<!-- wp:paragraph {"align":"center","fontSize":"large"} -->
+			<p class="has-text-align-center has-large-font-size">Have you tried turning it off and on again?</p>
+			<!-- /wp:paragraph -->
+		</main>
+		<!-- /wp:group -->
+	</div>
+</div>
+<!-- /wp:cover -->

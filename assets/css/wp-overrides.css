@@ -1,5 +1,7 @@
-
 .wp-site-blocks {
     padding: 0 !important;
 }
 
+:where(.wp-block-button__link) {
+    border-radius: inherit;
+}
