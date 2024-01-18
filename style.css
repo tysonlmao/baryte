@@ -18,44 +18,53 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 /* Styles intended only for the front.*/
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 :root {
-  --font-family-system: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-family-system: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   --font-family-mono: "Roboto Mono", var(--font-family-system);
   --font-family-vcr: "VCR OSD Mono", var(--font-family-system);
-  --color-primary: var(--wp--preset--color--primary); /* Adjust as per your theme */
+  --color-primary: var(
+    --wp--preset--color--primary
+  ); /* Adjust as per your theme */
   --color-secondary: var(--wp--preset--color--secondary);
   --color-base: var(--wp--preset--color--base);
   --color-contrast: var(--wp--preset--color--base); /* Adjust as needed */
 }
 @media screen and (prefers-reduced-motion: reduce) {
-
-	html {
-		scroll-behavior: auto;
-	}
+  html {
+    scroll-behavior: auto;
+  }
 }
 
-.wp-site-blocks>*+* {
-	margin-block-start: var(--wp--custom--spacing--0) !important;
-	padding: 0 !important;
-  }
+.wp-site-blocks > * + * {
+  margin-block-start: var(--wp--custom--spacing--0) !important;
+  padding: 0 !important;
+}
 
 body {
-	-moz-osx-font-smoothing: grayscale;
-	-webkit-font-smoothing: antialiased;
-	overflow-x: hidden; /* Prevent horizontal scroll */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
 * {
-	text-decoration: none !important;
+  text-decoration: none !important;
 }
 
 bdi {
-	color: var(--wp--preset--color--base)
+  color: var(--wp--preset--color--base);
 }
 
+/* 
+@since 1.0.0
+uppercase utility class
+*/
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
 
 button,
 input,
@@ -68,45 +77,45 @@ textarea {
 }
 
 label {
-    font-size: var(--wp--preset--font-size--small);
-	color: var(--wp--preset--color--primary);
-	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: var(--wp--preset--font-size--small);
+  color: var(--wp--preset--color--primary);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
-  
+
 input,
 textarea {
-	width: 100%;
-    padding: var(--wp--preset--spacing--30, 1em) var(--wp--preset--spacing--30, 1em);
-    border: initial;
-    box-shadow: inset 0 0 3px var(--wp--preset--color--primary);
-    border-radius: 3px;
-    color: var(--wp--preset--color--primary);
-    background-color: rgba(128, 128, 128, 0.1);
-    font-size: var(--wp--preset--font-size--small);
+  width: 100%;
+  padding: var(--wp--preset--spacing--30, 1em)
+    var(--wp--preset--spacing--30, 1em);
+  border: initial;
+  box-shadow: inset 0 0 3px var(--wp--preset--color--primary);
+  border-radius: 3px;
+  color: var(--wp--preset--color--primary);
+  background-color: rgba(128, 128, 128, 0.1);
+  font-size: var(--wp--preset--font-size--small);
 }
 
 input[type="submit"] {
-	background: var(--wp--preset--color--primary);
-    color: var(--wp--preset--color--base);
-    border: inherit;
-    line-height: inherit;
-    font-size: inherit;
-	width: unset;
-    padding: calc(0.667em + 2px) calc(1.333em + 2px);
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--base);
+  border: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  width: unset;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
 }
 
 .wp-block-button__link {
-	background: var(--wp--preset--color--primary);
-    color: var(--wp--preset--color--base);
-    border: inherit;
-    line-height: inherit;
-    font-size: inherit;
-	width: unset;
-    padding: calc(0.667em + 2px) calc(1.333em + 2px);
-
+  background: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--base);
+  border: inherit;
+  line-height: inherit;
+  font-size: inherit;
+  width: unset;
+  padding: calc(0.667em + 2px) calc(1.333em + 2px);
 }
 
 .wp-block-post-content {
-	padding: 0 !important; 
+  padding: 0 !important;
 }
-
